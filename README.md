@@ -45,6 +45,33 @@ npm install
 npm run dev
 ```
 
+### Start server with dev mode (VSCode)
+- Create `/.vscode/launch.json` file with the following contents
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch via NPM",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "dev"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        }
+    ]
+}
+```
+
+- Run VSCode debug with **Launch via NPM**
+- See also [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+
 ### Build server
 - Compile application sources from typescript to javascript using [tsc in typescript](https://www.npmjs.com/package/typescript)
 - Also, this command copies the `/public` folder into `/dist` for build includes the asset files. 
