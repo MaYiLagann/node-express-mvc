@@ -1,4 +1,5 @@
 # node-express-mvc
+- The [Node-express](https://expressjs.com/) server template with [TypeScript](https://www.typescriptlang.org/) and [MVC architecture](https://en.wikipedia.org/wiki/Model-view-controller) 
 
 ## Node Specification
 - [Node 20.11.0](https://nodejs.org/) (Installed on January 28, 2024)
