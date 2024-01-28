@@ -30,6 +30,13 @@
 
 ## Usages
 
+### Initialize the project
+- Install node modules before run project
+
+```
+npm install
+```
+
 ### Start server with dev mode
 - Run server on localhost with **watching file changes** using [ts-node](https://www.npmjs.com/package/ts-node) and [nodemon](https://www.npmjs.com/package/nodemon)
 
