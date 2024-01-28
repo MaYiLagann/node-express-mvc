@@ -33,7 +33,7 @@ npm run build
 ```
 
 ### Start server
-- Start server the build javascript server
+- Start server with compiled javascript sources
 
 ```
 npm run start
