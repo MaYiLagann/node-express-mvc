@@ -1,10 +1,23 @@
 # node-express-mvc
 
 ## Node Specification
-- Node 20.11.0 (Installed on January 28, 2024)
+- [Node 20.11.0](https://nodejs.org/) (Installed on January 28, 2024)
 
-## Global Packages
-- NPM 10.4.0
+## Packages
+
+### Global Packages
+- [npm 10.4.0](https://www.npmjs.com/package/npm)
+
+### Project Packages
+- [express 4.18.2](https://www.npmjs.com/package/express)
+- [dotenv 16.4.1](https://www.npmjs.com/package/dotenv)
+
+### Dev Packages
+- [typescript 5.3.3](https://www.npmjs.com/package/typescript)
+- [ts-node 10.9.2](https://www.npmjs.com/package/ts-node)
+- [nodemon 3.0.3](https://www.npmjs.com/package/nodemon)
+- [ncp 2.0.0](https://www.npmjs.com/package/ncp)
+  - Used for copying `/public` folder into `/dist` folder with **pure node command**
 
 ## Express Settings
 - Project created by [express-generator](https://www.npmjs.com/package/express-generator)
