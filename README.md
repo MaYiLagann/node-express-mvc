@@ -12,6 +12,7 @@
 ### Project Packages
 - [express 4.18.2](https://www.npmjs.com/package/express)
 - [dotenv 16.4.1](https://www.npmjs.com/package/dotenv)
+  - This can be removed, [Node 20.6.0](https://nodejs.org/en/blog/release/v20.6.0) has built-in support for `.env` file
 
 ### Dev Packages
 - [typescript 5.3.3](https://www.npmjs.com/package/typescript)
@@ -88,8 +89,9 @@ npm run start
 ```
 
 ## Todo List
-1. Add dependency injection solution
-2. Add MVC architecture
-3. Add test solution
-4. Add database handling solution
-5. Add redis handling solution
+1. Add typescript-eslint
+2. Add dependency injection solution
+3. Add MVC architecture
+4. Add test solution
+5. Add database handling solution
+6. Add redis handling solution
