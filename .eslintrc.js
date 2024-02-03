@@ -15,14 +15,15 @@ module.exports = {
   },
   root: true,
   rules: {
-    "dot-notation": "off",
-    "check-file/no-index": "error",
-    "check-file/filename-naming-convention": ["error", {
-      "**/*.{jsx,tsx}": "KEBAB_CASE",
-      "**/*.{js,ts}": "KEBAB_CASE"
+    'dot-notation': 'off',
+    'object-curly-spacing': ['error', 'always'],
+    'check-file/no-index': 'error',
+    'check-file/filename-naming-convention': ['error', {
+      '**/*.{jsx,tsx}': 'KEBAB_CASE',
+      '**/*.{js,ts}': 'KEBAB_CASE'
     }],
-    "check-file/folder-naming-convention": ["error", {
-      "**/*": "KEBAB_CASE"
+    'check-file/folder-naming-convention': ['error', {
+      '**/*': 'KEBAB_CASE'
     }]
   }
 };
