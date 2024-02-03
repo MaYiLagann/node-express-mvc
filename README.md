@@ -85,10 +85,27 @@ npm run dev
 - Run VSCode debug with **Launch via NPM**
 - See also [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
 
+### Linting the source code
+
+- Run [ESLint](https://typescript-eslint.io/getting-started) for typescript codes in project
+
+```bash
+npm run lint
+```
+
+### Testing the test code
+
+- Run [Jasmine](https://jasmine.github.io/pages/getting_started) with typescript spec codes
+- Write the spec codes in `/spec` folder
+
+```bash
+npm run test
+```
+
 ### Build server
 
 - Compile application sources from typescript to javascript using [tsc in typescript](https://www.npmjs.com/package/typescript)
-- Also, this command copies the `/public` folder into `/dist` for build includes the asset files.
+- Also, this command copies the `/public` folder into `/dist` for build includes the asset files
 
 ```bash
 npm run build
