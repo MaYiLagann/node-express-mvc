@@ -6,7 +6,7 @@
     "tsc": "tsc",
     "eslint": "eslint .",
     "copy-public": "ncp ./public ./dist/public",
-    "build": "npm run tsc && npm run copy-public",
+    "build": "npm run eslint && npm run tsc && npm run copy-public",
     "start": "node ./dist/bin/www.js",
     "dev": "nodemon ./bin/www.ts"
   },
