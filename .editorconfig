@@ -14,8 +14,8 @@ insert_final_newline = true
 # Remove whitespace characters preceding newline characters
 trim_trailing_whitespace = true
 
-# Two space indentation for JavaScript files
-[*.{js,json}]
+# Two space indentation for JavaScript and TypeScript files
+[*.{js,jsx,ts,tsx,json}]
 indent_size = 2
 
 # Disable trimming trailing whitespaces so that double space newlines work
