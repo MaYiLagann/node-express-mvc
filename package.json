@@ -28,6 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
     "eslint": "^8.56.0",
+    "eslint-plugin-check-file": "^2.6.2",
     "jasmine": "^5.1.0",
     "ncp": "^2.0.0",
     "nodemon": "^3.0.3",

@@ -8,7 +8,7 @@ module.exports = {
   ],
   ignorePatterns: ['.eslintrc.js', 'node_modules/', 'dist/', 'spec/'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'check-file'],
   parserOptions: {
     project: true,
     tsconfigRootDir: __dirname,
@@ -16,5 +16,18 @@ module.exports = {
   root: true,
   rules: {
     "dot-notation": "off",
+    "check-file/no-index": "error",
+    "check-file/filename-naming-convention": [
+      "error",
+      {
+        "**/*.{jsx,tsx}": "KEBAB_CASE",
+        "**/*.{js,ts}": "KEBAB_CASE"
+      }
+    ],
+    "check-file/folder-naming-convention": [
+      "error", {
+        "**/*": "KEBAB_CASE"
+      }
+    ]
   }
 };
