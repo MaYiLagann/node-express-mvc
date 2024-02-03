@@ -122,6 +122,5 @@ npm run start
 ## Todo List
 
 1. Add dependency injection solution
-2. Add MVC architecture
-3. Add database handling solution
-4. Add redis handling solution
+2. Add database handling solution
+3. Add redis handling solution
