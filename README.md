@@ -20,6 +20,7 @@
 - [nodemon 3.0.3](https://www.npmjs.com/package/nodemon)
 - [ncp 2.0.0](https://www.npmjs.com/package/ncp)
   - Used for copying `/public` folder into `/dist` folder with **pure node command**
+- [eslint 8.56.0](https://www.npmjs.com/package/eslint)
 
 ## Express Settings
 - Project created by [express-generator](https://www.npmjs.com/package/express-generator)
@@ -89,9 +90,8 @@ npm run start
 ```
 
 ## Todo List
-1. Add typescript-eslint
-2. Add dependency injection solution
-3. Add MVC architecture
-4. Add test solution
-5. Add database handling solution
-6. Add redis handling solution
+1. Add dependency injection solution
+2. Add MVC architecture
+3. Add test solution
+4. Add database handling solution
+5. Add redis handling solution
