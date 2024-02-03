@@ -6,12 +6,15 @@ module.exports = {
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:@typescript-eslint/strict',
   ],
+  ignorePatterns: ['.eslintrc.js', 'node_modules/', 'dist/'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
   parserOptions: {
     project: true,
     tsconfigRootDir: __dirname,
   },
-  ignorePatterns: ['.eslintrc.js', 'node_modules/', 'dist/'],
   root: true,
+  rules: {
+    "dot-notation": "off",
+  }
 };
