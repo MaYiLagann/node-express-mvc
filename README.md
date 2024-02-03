@@ -21,6 +21,7 @@
 - [ncp 2.0.0](https://www.npmjs.com/package/ncp)
   - Used for copying `/public` folder into `/dist` folder with **pure node command**
 - [eslint 8.56.0](https://www.npmjs.com/package/eslint)
+- [jasmine 5.1.0](https://www.npmjs.com/package/jasmine)
 
 ## Express Settings
 - Project created by [express-generator](https://www.npmjs.com/package/express-generator)
@@ -92,6 +93,5 @@ npm run start
 ## Todo List
 1. Add dependency injection solution
 2. Add MVC architecture
-3. Add test solution
-4. Add database handling solution
-5. Add redis handling solution
+3. Add database handling solution
+4. Add redis handling solution
