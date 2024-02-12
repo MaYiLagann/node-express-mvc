@@ -18,6 +18,7 @@
 - [dotenv 16.4.1](https://www.npmjs.com/package/dotenv)
   - This can be removed, [Node 20.6.0](https://nodejs.org/en/blog/release/v20.6.0) has built-in support for `.env` file
 - [inversify 6.0.2](https://www.npmjs.com/package/inversify)
+- [@prisma/client 5.9.1](https://www.npmjs.com/package/@prisma/client) by [prisma migrate](https://www.prisma.io/docs/orm/prisma-migrate/getting-started)
 
 ### Dev Packages
 
@@ -28,6 +29,7 @@
   - Used for copying `/public` folder into `/dist` folder with **pure node command**
 - [eslint 8.56.0](https://www.npmjs.com/package/eslint)
 - [jasmine 5.1.0](https://www.npmjs.com/package/jasmine)
+- [prisma 5.9.1](https://www.npmjs.com/package/prisma)
 
 ## Express Settings
 
