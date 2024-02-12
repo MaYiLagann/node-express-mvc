@@ -31,8 +31,19 @@ router.get('/users', async (_req: Request, res: Response) => {
  *   post:
  *     description: Create a new user
  *     tags: [Users]
- *     produces:
- *       - plain/text
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *               password:
+ *                 type: string
+ *               name:
+ *                 type: string
  *     responses:
  *       200:
  *         description:
