@@ -27,7 +27,7 @@ router.get('/users', async (_req: Request, res: Response) => {
 
 /**
  * @swagger
- * /users:
+ * /user:
  *   post:
  *     description: Create a new user
  *     tags: [Users]
