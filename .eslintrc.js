@@ -6,7 +6,7 @@ module.exports = {
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:@typescript-eslint/strict',
   ],
-  ignorePatterns: ['.eslintrc.js', 'node_modules/', 'dist/', 'spec/'],
+  ignorePatterns: ['.eslintrc.js', 'node_modules/', 'dist/', 'spec/', 'public/'],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'check-file'],
   parserOptions: {
