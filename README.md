@@ -127,5 +127,6 @@ npm run start
 
 ## Todo List
 
-1. Add scripting tutorial
-2. Add redis handling solution
+1. Add model validate from request object.
+2. Add scripting tutorial
+3. Add redis handling solution

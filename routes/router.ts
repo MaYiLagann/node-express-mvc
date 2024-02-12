@@ -50,6 +50,7 @@ router.get('/users', async (_req: Request, res: Response) => {
  */
 router.post('/user', async (req: Request, res: Response) => {
   const controller = container.resolve(UserController);
+  // Todo: Validate the request body with model.
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
   res.send(await controller.Post(req.body.email, req.body.password, req.body.name));
 });
