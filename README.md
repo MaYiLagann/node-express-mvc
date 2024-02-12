@@ -17,6 +17,7 @@
 - [express 4.18.2](https://www.npmjs.com/package/express)
 - [dotenv 16.4.1](https://www.npmjs.com/package/dotenv)
   - This can be removed, [Node 20.6.0](https://nodejs.org/en/blog/release/v20.6.0) has built-in support for `.env` file
+- [inversify 6.0.2](https://www.npmjs.com/package/inversify)
 
 ### Dev Packages
 
@@ -121,6 +122,5 @@ npm run start
 
 ## Todo List
 
-1. Add dependency injection solution
-2. Add database handling solution
-3. Add redis handling solution
+1. Add database handling solution
+2. Add redis handling solution
