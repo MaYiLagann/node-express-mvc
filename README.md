@@ -123,4 +123,5 @@ npm run start
 ## Todo List
 
 1. Add database handling solution
-2. Add redis handling solution
+2. Apply [swagger](https://www.npmjs.com/package/swagger-ui-express)
+3. Add redis handling solution
