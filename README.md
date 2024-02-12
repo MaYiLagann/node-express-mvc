@@ -21,6 +21,7 @@
 - [@prisma/client 5.9.1](https://www.npmjs.com/package/@prisma/client) by [prisma migrate](https://www.prisma.io/docs/orm/prisma-migrate/getting-started)
 - [bcrypt 5.1.1](https://www.npmjs.com/package/bcrypt)
 - [swagger-ui-express 5.0.0](https://www.npmjs.com/package/swagger-ui-express)
+- [swagger-jsdoc 6.2.8](https://www.npmjs.com/package/swagger-jsdoc)
 
 ### Dev Packages
 
@@ -126,6 +127,5 @@ npm run start
 
 ## Todo List
 
-1. Add database handling solution
-2. Apply [swagger](https://www.npmjs.com/package/swagger-ui-express)
-3. Add redis handling solution
+1. Add scripting tutorial
+2. Add redis handling solution
