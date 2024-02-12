@@ -5,5 +5,5 @@ export interface IUserService {
    * @param password Password of the user.
    * @return Result of authorization.
    */
-  authorize(id: string, password: string): boolean;
+  authorize(id: string, password: string): Promise<boolean>;
 }
