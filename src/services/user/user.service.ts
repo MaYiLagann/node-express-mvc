@@ -1,5 +1,7 @@
+import { injectable } from "inversify";
 import { IUserService } from "./user.service.interface";
 
+@injectable()
 export class UserService implements IUserService {
   async authorize(id: string, password: string): Promise<boolean> {
     await new Promise(resolve => setTimeout(resolve, 0));
