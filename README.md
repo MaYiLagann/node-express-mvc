@@ -19,6 +19,8 @@
   - This can be removed, [Node 20.6.0](https://nodejs.org/en/blog/release/v20.6.0) has built-in support for `.env` file
 - [inversify 6.0.2](https://www.npmjs.com/package/inversify)
 - [@prisma/client 5.9.1](https://www.npmjs.com/package/@prisma/client) by [prisma migrate](https://www.prisma.io/docs/orm/prisma-migrate/getting-started)
+- [bcrypt 5.1.1](https://www.npmjs.com/package/bcrypt)
+- [swagger-ui-express 5.0.0](https://www.npmjs.com/package/swagger-ui-express)
 
 ### Dev Packages
 
