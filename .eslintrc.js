@@ -21,6 +21,8 @@ module.exports = {
     'check-file/filename-naming-convention': ['error', {
       '**/*.{jsx,tsx}': 'KEBAB_CASE',
       '**/*.{js,ts}': 'KEBAB_CASE'
+    }, {
+      'ignoreMiddleExtensions': true,
     }],
     'check-file/folder-naming-convention': ['error', {
       '**/*': 'KEBAB_CASE'

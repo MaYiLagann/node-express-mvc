@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
 import { Request, Response, Router } from 'express';
-import { UserController } from "../src/controllers/user/user-controller";
+import { UserController } from "../src/controllers/user/user.controller";
 
 export const router = Router();
 
