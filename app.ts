@@ -13,12 +13,13 @@ import logger from 'morgan';
 // Import swagger (type-unsafe).
 import swaggerUi, { JsonObject } from 'swagger-ui-express';
 import swaggerJSDoc from 'swagger-jsdoc';
-import packageJson from './package.json';
 
 // Import routes.
 import { router } from './routes/router';
 
 const app: Express = express();
+const appName = 'node-express-mvc';
+const appVersion = '0.0.0';
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -36,8 +37,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJSDoc({
   definition: {
     openapi: '3.0.0',
     info: {
-      title: packageJson.name, // eslint-disable-line
-      version: packageJson.version, // eslint-disable-line
+      title: appName,
+      version: appVersion,
     },
   },
   apis: ['./routes/*.ts'], // files containing annotations as above
