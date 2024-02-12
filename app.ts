@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+
 /**
  * The reflect-metadata polyfill should be imported only once in your entire application.
  * See also: https://www.npmjs.com/package/inversify#-installation
@@ -9,6 +11,7 @@ import express, { Express } from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
+import cors from 'cors';
 
 // Import swagger (type-unsafe).
 import swaggerUi, { JsonObject } from 'swagger-ui-express';
@@ -21,7 +24,10 @@ const app: Express = express();
 const appName = 'node-express-mvc';
 const appVersion = '0.0.0';
 
+// Todo: Use danger middlewares only local dev environment.
+app.use(cors());
 app.use(logger('dev'));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -31,7 +37,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 
 // Swagger router.
-// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJSDoc({
   failOnErrors: true,
   definition: {
