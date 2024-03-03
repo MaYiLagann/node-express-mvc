@@ -1,6 +1,7 @@
 import { inject, injectable } from "inversify";
 import { services } from "../../services/services";
 import { IUserService } from "../../services/user/user.service.interface";
+import { RequestPostUserModel, ResponsePostUserModel } from "../../models/apis/post-user-schema";
 
 @injectable()
 export class UserController {
@@ -17,12 +18,16 @@ export class UserController {
       throw new Error('failed to get user');
   }
 
-  public async Post(email: string, password: string, name: string): Promise<void> {
-    await this.userService.signUp({
+  public async Post(request: RequestPostUserModel): Promise<ResponsePostUserModel> {
+    const user = await this.userService.signUp({
       id: 0,
-      email: email,
-      password: password,
-      name: name,
+      email: request.email,
+      password: request.password,
+      name: request.name,
     });
+
+    return {
+      id: user.id,
+    };
   }
 }

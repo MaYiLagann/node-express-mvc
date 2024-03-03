@@ -1,7 +1,9 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
 import { Request, Response, Router } from 'express';
+import { ZodError } from "zod";
 import { container } from "../inversify.config";
 import { UserController } from "../src/controllers/user/user.controller";
+import { RequestPostUserSchema, ResponsePostUserSchema } from "../src/models/apis/post-user-schema";
 
 export const router = Router();
 
@@ -49,8 +51,17 @@ router.get('/users', async (_req: Request, res: Response) => {
  *         description:
  */
 router.post('/user', async (req: Request, res: Response) => {
-  const controller = container.resolve(UserController);
-  // Todo: Validate the request body with model.
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
-  res.send(await controller.Post(req.body.email, req.body.password, req.body.name));
+  try {
+    const request = RequestPostUserSchema.parse(req.body);
+    const controller = container.resolve(UserController);
+    const response = ResponsePostUserSchema.parse(await controller.Post(request));
+
+    res.send(response);
+  } catch (err) {
+    if (err instanceof ZodError) {
+      res.status(400).send(err);
+    } else {
+      res.status(500).send(err);
+    }
+  }
 });
